@@ -15,7 +15,9 @@ jobs:
       run: 
         mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=release ..
     - name: build 
-      run:
+      run: |
+        pwd
+        ls
         cmake --build ..
     - name: run program
       run: ./leetcode

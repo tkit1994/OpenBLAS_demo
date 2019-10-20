@@ -1,7 +1,8 @@
 include(ExternalProject)
 
 # for multi plantform support
-if(WIN32)
+if(MSVC)
+    message("Using MSVC")
     set(prefix "")
     set(suffix ".lib")
 elseif(APPLE)

@@ -16,7 +16,7 @@ jobs:
         mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=release ..
     - name: build 
       run: |
-        pwd
+        cd build
         ls
         cmake --build ..
     - name: run program

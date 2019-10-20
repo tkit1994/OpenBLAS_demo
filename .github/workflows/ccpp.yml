@@ -18,6 +18,6 @@ jobs:
       run: |
         cd build
         ls
-        cmake --build ..
+        cmake --build .
     - name: run program
-      run: ./leetcode
+      run: ./build/leetcode
